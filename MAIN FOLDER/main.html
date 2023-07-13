@@ -3,152 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Main Document</title>
+    <title>Profile Document</title>
     <link rel="stylesheet" href="main.css" />
   </head>
-
   <body>
-    <header class="header">
-      <div class="nav">
-        <img src="/Asset/logo/Black Logo.png" alt="" class="logo" />
-        <div class="search">
-          <input placeholder="Search users..." type="text" />
-          <button type="submit">Go</button>
-        </div>
-        <div class="memberSection">
-          <ul>
-            <li>
-              <a href="/USER FOLDER/users.html" id="memberList">Members</a>
-            </li>
-            <li><a href="">Chatbox</a></li>
-          </ul>
-
-          <img
-            src="/Asset/gender-neutral-user.png"
-            alt=""
-            class="profileIcon"
-          />
-          <img src="/Asset/download.png" alt="" id="notifyIcon" />
-        </div>
-        <div class="toggle-container">
-          <label class="switch">
-            <input type="checkbox" id="toggleSwitch" />
-            <span class="slider round"></span>
-          </label>
-        </div>
-        <span id="userCredentials">Hello</span>
-        
-      </div>
-    </header>
     <main class="main">
-      <aside class="aside">
-        <div class="col-md-6 col-xl-4 grid-margin stretch-card">
-          <div class="card">
-            <div class="card-body">
-              <div class="d-flex flex-row justify-content-between">
-                <h4 class="card-title">Messages</h4>
-                <p class="text-muted mb-1 small">View all</p>
-              </div>
-              <div class="preview-list">
-                <div class="preview-item border-bottom">
-                  <div class="preview-thumbnail">
-                    <img
-                      src="/Asset/images (10).jpeg"
-                      alt="image"
-                      class="rounded-circle"
-                    />
-                  </div>
-                  <div class="preview-item-content d-flex flex-grow">
-                    <div class="flex-grow">
-                      <div
-                        class="d-flex d-md-block d-xl-flex justify-content-between"
-                      >
-                        <h6 class="preview-subject">Leonard</h6>
-                        <p class="text-muted text-small">5 minutes ago</p>
-                      </div>
-                      <p class="text-muted">
-                        Well, it seems to be working now.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="preview-item border-bottom">
-                  <div class="preview-thumbnail">
-                    <img
-                      src="asset/images/faces/face8.jpg"
-                      alt="image"
-                      class="rounded-circle"
-                    />
-                  </div>
-                  <div class="preview-item-content d-flex flex-grow">
-                    <div class="flex-grow">
-                      <div
-                        class="d-flex d-md-block d-xl-flex justify-content-between"
-                      >
-                        <h6 class="preview-subject">Luella Mills</h6>
-                        <p class="text-muted text-small">10 Minutes Ago</p>
-                      </div>
-                      <p class="text-muted">
-                        Well, it seems to be working now.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="preview-item border-bottom">
-                  <div class="preview-thumbnail">
-                    <img
-                      src="asset/images/faces/face9.jpg"
-                      alt="image"
-                      class="rounded-circle"
-                    />
-                  </div>
-                  <div class="preview-item-content d-flex flex-grow">
-                    <div class="flex-grow">
-                      <div
-                        class="d-flex d-md-block d-xl-flex justify-content-between"
-                      >
-                        <h6 class="preview-subject">Ethel Kelly</h6>
-                        <p class="text-muted text-small">2 Hours Ago</p>
-                      </div>
-                      <p class="text-muted">Please review the tickets</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="preview-item border-bottom">
-                  <div class="preview-thumbnail">
-                    <img
-                      src="asset/images/faces/face11.jpg"
-                      alt="image"
-                      class="rounded-circle"
-                    />
-                  </div>
-                  <div class="preview-item-content d-flex flex-grow">
-                    <div class="flex-grow">
-                      <div
-                        class="d-flex d-md-block d-xl-flex justify-content-between"
-                      >
-                        <h6 class="preview-subject">Herman May</h6>
-                        <p class="text-muted text-small">4 Hours Ago</p>
-                      </div>
-                      <p class="text-muted">
-                        Thanks a lot. It was easy to fix it .
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </aside>
+      <button><a href="../MAINTWO FOLDER/Sidebar Menu - Dark Light Mode/index.html">Go back</a></button>
+      <img src="/Asset/logo/Black Logo.png" alt="" class="logo"/>
+      
       <section class="container messageContainer">
         <div class="profile">
           <div class="profile-picture">
             <label for="profile-picture">upload picture</label>
-          
-            <input type="file" id="profile-picture" accept="image/*" class="profile-picture-input" onchange="previewProfilePicture(event)" />
-           <img src="" alt="" class="profile-picture-preview"
-            id="profile-picture-preview" />
+
+            <input
+              type="file"
+              id="profile-picture"
+              accept="image/*"
+              class="profile-picture-input"
+              onchange="previewProfilePicture(event)"
+            />
+            <img
+              src=""
+              alt=""
+              class="profile-picture-preview"
+              id="profile-picture-preview"
+            />
           </div>
 
           <div class="profile-info">
@@ -215,12 +95,12 @@
             </select>
 
             <label for="yearsOfExperience">years of Experience:</label>
-                <input
-                  type="number"
-                  id="yearsOfExperience"
-                  class="exper-input phone-input"
-                  placeholder="0"
-                />
+            <input
+              type="number"
+              id="yearsOfExperience"
+              class="exper-input phone-input"
+              placeholder="0"
+            />
 
             <label>Share your talents through social media handles:</label>
             <div class="social-input">
@@ -269,7 +149,7 @@
               class="bio-input"
               placeholder="Write a short bio about yourself"
             ></textarea>
-           
+
             <a class="update-btn"><span>update profile</span></a>
           </div>
         </div>

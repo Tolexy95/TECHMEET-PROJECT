@@ -7,7 +7,7 @@
 }
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #f2f2f2;
+  background-color: #E4E9F7;
 }
 
 /* Add your existing CSS styles here */
@@ -76,24 +76,6 @@ body.dark-mode {
   color: #ffffff;
 }
 
-
-
-.header {
-  padding: 20px;
-  font-weight: bold;
-  /* position: fixed; */
-  width: 100%;
-  top: 0;
-}
-
-.nav {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 40px;
-  padding-right: 3rem;
-}
-
 .logo {
   margin-right: 15rem;
   width: 180px;
@@ -131,43 +113,6 @@ body.dark-mode {
 .search {
   display: inline-block;
   position: relative;
-}
-
-.search input[type="text"] {
-  width: 200px;
-  padding: 10px;
-  border: none;
-  border-radius: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.search button[type="submit"] {
-  background-color: #1c4f857a;
-  border: none;
-  color: #fff;
-  cursor: pointer;
-  padding: 10px 20px;
-  border-radius: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  position: absolute;
-  top: 0;
-  right: 0;
-  transition: 0.9s ease;
-}
-
-.search button[type="submit"]:hover {
-  transform: scale(1.1);
-  color: rgb(255, 255, 255);
-  background-color: rgba(117, 117, 156, 0.616);
-}
-
-.main {
-  display: grid;
-  /* grid-template-columns: 1fr 2fr; */
-  grid-template-columns: auto auto;
-  gap: 20px;
-  /* margin: 20px; */
-  margin-top: 5rem;
 }
 
 .container {

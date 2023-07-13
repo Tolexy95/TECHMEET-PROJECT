@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TECHMEET APP</title>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="./CARD FOLDER/Responsive Card Slider/css/swiper-bundle.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./CARD FOLDER/Responsive Card Slider/css/style.css">
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
       rel="stylesheet"
@@ -16,7 +21,7 @@
       <header>
         <nav>
           <div>
-            <img src="./Asset/logo/White Logo.png" alt="" class="logo" />
+            <img src="./Asset/AppLogo.jpg" alt="" class="logo"/>
           </div>
           <div class="header">
             <div class="menu">
@@ -146,8 +151,8 @@
             infrastructure and an intuitive user interface.
           </p>
         </article>
-        <article class="hireTalent thirdDisplay">
-          <h1>our culture</h1>
+        <article class="hireTalent fourthDisplay">
+          <h1>Connect</h1>
           <h2>Uniting Developers for Success</h2>
           <p>
             A collaborative platform created by a skilled team of developers for
@@ -157,8 +162,8 @@
             infrastructure and an intuitive user interface.
           </p>
         </article>
-        <article class="hireTalent thirdDisplay">
-          <h1>learn more</h1>
+        <article class="hireTalent fifthDisplay">
+          <h1>Networking</h1>
           <h2>Uniting Developers for Success</h2>
           <p>
             A collaborative platform created by a skilled team of developers for
@@ -168,7 +173,7 @@
             infrastructure and an intuitive user interface.
           </p>
         </article>
-        <article class="hireTalent thirdDisplay">
+        <article class="hireTalent sixthDisplay">
           <h1>United we stand</h1>
           <h2>Uniting Developers for Success</h2>
           <p>
@@ -182,66 +187,178 @@
       </div>
     </section>
     <section class="aboutSection">
-      <div id="client">
-        <h2 id="About" class="client">About</h2>
-      </div>
-      <div class="businessinfo">
-        <div class="ownerinfo">
-          <div>
-            <img src="/Asset/Toyin picture.jpg" />
-          </div>
-          <p>
-            A passionate frontend developer focusing on React. With expertise in
-            HTML, CSS, and JavaScript, I create clean code and user-centric
-            designs. Collaboration and staying updated with industry trends are
-            important to me. I aspire to leave a lasting impact.
-          </p>
-          <div class="aboutLastPart">
-            <h3>Oluwatoyin O.</h3>
-            <p><span>Frontend Developer</span></p>
-          </div>
+      <div class="slide-container swiper">
+        <h1 class="section-title" data-name="Connect with high talented developers">Connect with high talented developers</h1>
+        <div class="slide-content">
+            <div class="card-wrapper swiper-wrapper">
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <img src="/Asset/Toyin_picture-removebg-preview.png" alt="" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">Oluwatoyin Olubayo</h2>
+                        <p class="description"> A passionate frontend developer focusing on React. With expertise in
+                          HTML, CSS, and JavaScript, I create clean code and user-centric
+                          designs.</p>
+
+                        <button class="button">View More</button>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <img src="/Asset/Victor_pix-removebg-preview.png" alt="" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">Victor Ndulue</h2>
+                        <p class="description">I'm a skilled backend developer specializing in .NET, passionate
+                          about building robust and scalable applications. With expertise in
+                          C#, ASP.NET, and SQL.</p>
+
+                        <button class="button">View More</button>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <img src="Asset/Bolu_pix-removebg-preview.png" alt="" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">Bolu Abolade</h2>
+                        <p class="description">I'm a dedicated backend developer specializing in .NET. With
+                          expertise in C#, ASP.NET, and SQL, I excel in building robust and
+                          scalable applications.</p>
+
+                        <button class="button">View More</button>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <img src="Asset/Waliyat_pix-removebg-preview.png" alt="" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">Waliyah Okunade</h2>
+                        <p class="description">A passionate frontend developer focusing on React. With grate expertise in
+                          HTML, CSS, and JavaScript.</p>
+
+                        <button class="button">View More</button>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <img src="images/profile5.jpg" alt="" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">David Dell</h2>
+                        <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                        <button class="button">View More</button>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <img src="images/profile6.jpg" alt="" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">David Dell</h2>
+                        <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                        <button class="button">View More</button>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <img src="images/profile7.jpg" alt="" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">David Dell</h2>
+                        <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                        <button class="button">View More</button>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <img src="images/profile8.jpg" alt="" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">David Dell</h2>
+                        <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                        <button class="button">View More</button>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <img src="images/profile9.jpg" alt="" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">David Dell</h2>
+                        <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                        <button class="button">View More</button>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="ownerinfo">
-          <div>
-            <img src="/Asset/images (4).jpeg" alt="" />
-          </div>
-          <p>
-            I'm a skilled backend developer specializing in .NET, passionate
-            about building robust and scalable applications. With expertise in
-            C#, ASP.NET, and SQL, I design efficient backend systems and
-            implement secure authentication and authorization mechanisms.
-          </p>
-          <div>
-            <h3>Victor S.</h3>
-            <p><span>Backend Developer</span></p>
-          </div>
-        </div>
+        <div class="swiper-button-next swiper-navBtn"></div>
+        <div class="swiper-button-prev swiper-navBtn"></div>
+        <div class="swiper-pagination"></div>
+    </div>
 
-        <div class="ownerinfo">
-          <div>
-            <img src="/Asset/images (9).jpeg" alt="" />
-          </div>
-          <p>
-            I'm a dedicated backend developer specializing in .NET. With
-            expertise in C#, ASP.NET, and SQL, I excel in building robust and
-            scalable applications. Prioritizing security and efficiency, I
-            design efficient APIs and leverage microservices architecture.
-          </p>
-          <div>
-            <h3>Bolu F.</h3>
-            <p><span>Backend Developer</span></p>
-          </div>
-        </div>
-      </div>
     </section>
     <!-- Footer -->
-    <footer id="Contact">
+    <footer>
       <!-- the first footer div -->
       <div class="footer-icons">
         <!-- the logo and icons div -->
         <div class="footer-img">
-          <img src="./Asset/logo/White Logo.png" alt="" class="footerlogo"/>
+          <img src="./Asset/logo/White Logo.png" alt="" class="footerlogo" />
+          
           <div class="whatever">
             <img src="/Asset/icon-facebook.svg" alt="facebook icon" />
             <img src="/Asset/icon-youtube.svg" alt="icon-youtube" />
@@ -264,17 +381,20 @@
           <div class="footer-links">
             <ul>
               <li><a href=""> Support</a></li>
-              <li><a href="">Privacy Policy</a></li>
+              <li><a href="">service</a></li>
             </ul>
+          </div>
+
+          <div class="copyright">
+            <p><a href="">© TECHMEET. All Rights Reserved</a></p>
           </div>
         </div>
       </div>
-      <!-- the second footer div -->
-      <div class="copyright">
-        <img src="./Asset/logo/White Logo.png" alt="" class="footerlogo"/>
-      </div>
+      
     </footer>
     <script src="script.js" type="module"></script>
+    <script src="./CARD FOLDER/Responsive Card Slider/js/swiper-bundle.min.js"></script>
+    <script src="./CARD FOLDER/Responsive Card Slider/js/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
     <script src=" https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   </body>

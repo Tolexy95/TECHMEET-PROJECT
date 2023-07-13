@@ -34,7 +34,7 @@ async function handleSignIn(event) {
   
   const emailInput = document.getElementById('emailBox');
   const passwordInput = document.getElementById('passwordBox');
-  const submitButton = document.getElementById('submit');
+  
   
   const email = emailInput.value;
   const password = passwordInput.value;
@@ -46,7 +46,7 @@ async function handleSignIn(event) {
       storeToken(token);
       // Navigate to the next page
       alert("congratulation")
-      window.location.href = '/MAIN FOLDER/main.html';
+      window.location.href = '/MAINTWO FOLDER/Sidebar Menu - Dark Light Mode/index.html';
     } else {
       alert('Invalid email or password');
     }
@@ -92,3 +92,12 @@ async function authenticateUser(email, password) {
 // Attach event listener to form submit event for signing in
 const signInForm = document.getElementById('validationForm');
 signInForm.addEventListener('submit', handleSignIn);
+
+
+// const signInForm = document.getElementById("validationForm");
+//   const submitButton = document.getElementById('submit');
+// submitButton.addEventListener("click", () => {
+//   const loader = document.querySelector(".loader");
+//   loader.style.display ="block";
+//   signInForm.style.display ="none";
+// })
