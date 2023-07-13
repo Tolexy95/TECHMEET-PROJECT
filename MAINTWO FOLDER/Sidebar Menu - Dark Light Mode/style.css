@@ -307,3 +307,7 @@ body.dark .switch::before{
 body.dark .home .text{
     color: var(--text-color);
 }
+#userCredentials{
+text-transform: uppercase;
+font-size: 20px;
+}

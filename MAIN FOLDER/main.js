@@ -160,28 +160,7 @@ function toggleDarkMode() {
 const toggleSwitch = document.getElementById('toggleSwitch');
 toggleSwitch.addEventListener('change', toggleDarkMode);
 
-// Function to retrieve the user credentials from local storage
-function getUserCredentials() {
-  const user = localStorage.getItem("user");
-  return user ? JSON.parse(user) : null;
-}
 
-// Function to load the user credentials on the navigation bar
-function loadUserCredentials() {
-  // Retrieve the user credentials from local storage
-  const user = getUserCredentials();
-
-  // Get the user credentials element
-  const userCredentials = document.getElementById("userCredentials");
-
-  // Update the user credentials element with the username and email
-  if (user) {
-    userCredentials.textContent = `Welcome ${user.userName}, ${user.email}`;
-  }
-}
-
-// Call the loadUserCredentials function when the page loads
-window.addEventListener("load", loadUserCredentials);
 
 
 

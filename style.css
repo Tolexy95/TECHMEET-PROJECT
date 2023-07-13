@@ -17,8 +17,8 @@ html {
 
 .logo {
   margin-left: 5rem;
-  width: 150px;
-  background-color: #061A2Eff; 
+  width: 170px;
+  margin-bottom: 0;
 }
 .footerlogo{
   width: 150px;
@@ -50,6 +50,7 @@ ul li {
   top: 0;
   position: sticky;
   left: 0;
+  z-index: 20;
 }
 
 .list-right {

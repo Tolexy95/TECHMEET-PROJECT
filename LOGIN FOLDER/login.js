@@ -18,14 +18,22 @@ eyeIcons.forEach(function (eyeIcon) {
   });
 });
 
-// Function to store the token in local storage
-function storeToken(token) {
+
+// Function to store the token and user's name in local storage
+function storeTokenAndUserName(token, userName) {
   localStorage.setItem('token', token);
+  localStorage.setItem('userName', userName);
 }
+
 
 // Function to retrieve the token from local storage
 function getToken() {
   return localStorage.getItem('token');
+}
+
+// Function to retrieve the user's name from local storage
+function getUserName() {
+  return localStorage.getItem('userName');
 }
 
 // Function to handle form submission for signing in
@@ -35,17 +43,16 @@ async function handleSignIn(event) {
   const emailInput = document.getElementById('emailBox');
   const passwordInput = document.getElementById('passwordBox');
   
-  
   const email = emailInput.value;
   const password = passwordInput.value;
   
   try {
-    const token = await authenticateUser(email, password);
+    const { token, userName } = await authenticateUser(email, password);
   
-    if (token) {
-      storeToken(token);
+    if (token && userName) {
+      storeTokenAndUserName(token, userName);
       // Navigate to the next page
-      alert("congratulation")
+      alert("Congratulations! You are logged in as " + userName);
       window.location.href = '/MAINTWO FOLDER/Sidebar Menu - Dark Light Mode/index.html';
     } else {
       alert('Invalid email or password');
@@ -55,7 +62,7 @@ async function handleSignIn(event) {
   }
 }
 
-// Function to authenticate the user and retrieve the token
+// Function to authenticate the user and retrieve the token and user's name
 async function authenticateUser(email, password) {
   try {
     // Make API call to authenticate the user
@@ -81,8 +88,11 @@ async function authenticateUser(email, password) {
 
     const data = await response.json();
 
-    // Return the authentication token
-    return data.token;
+    // Return the authentication token and user's name
+    return {
+      token: data.token,
+      userName: data.userName
+    };
   } catch (error) {
     console.error('Error:', error.message);
     throw error;
@@ -94,10 +104,28 @@ const signInForm = document.getElementById('validationForm');
 signInForm.addEventListener('submit', handleSignIn);
 
 
-// const signInForm = document.getElementById("validationForm");
-//   const submitButton = document.getElementById('submit');
-// submitButton.addEventListener("click", () => {
-//   const loader = document.querySelector(".loader");
-//   loader.style.display ="block";
-//   signInForm.style.display ="none";
-// })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // const signInForm = document.getElementById("validationForm");
+// //   const submitButton = document.getElementById('submit');
+// // submitButton.addEventListener("click", () => {
+// //   const loader = document.querySelector(".loader");
+// //   loader.style.display ="block";
+// //   signInForm.style.display ="none";
+// // })
