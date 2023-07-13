@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+* {
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  /* overflow-x: hidden; */
+  font-family: "Poppins", sans-serif;
+}
+  .memberContainer {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    gap: 20px;
+  }
+  
+  .otherUserImage {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .otherUserName {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .otherUserEmail {
+    font-size: 14px;
+    color: #666;
+    /* margin-bottom: 5px; */
+  }
+  
+  .otherUserProfile {
+    font-size: 14px;
+    color: #1c4f85;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  
+  .chatWithUser {
+    font-size: 14px;
+    color: #1c4f85;
+    text-decoration: none;
+  }
+  
+  .chatWithUser:hover,
+  .otherUserProfile:hover {
+    text-decoration: underline;
+  }
+  

@@ -1,0 +1,569 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+* {
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.logo {
+  margin-left: 5rem;
+  width: 150px;
+}
+.footerlogo{
+  width: 150px;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logoMobile {
+  opacity: 0;
+}
+#nav {
+  opacity: 0;
+}
+ul li {
+  list-style-type: none;
+}
+
+.headerSection {
+  background-color: hsl(233, 26%, 24%);
+  /* opacity: 0.95; */
+  -webkit-box-shadow: #333 1px 3px 4px;
+  -moz-box-shadow: #333 1px 3px 4px;
+  box-shadow: #333 1px 3px 4px;
+  top: 0;
+  position: sticky;
+  left: 0;
+}
+
+.list-right {
+  margin-right: 100px;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  font-size: 18px;
+  /* margin-bottom: 0.3em; */
+}
+
+.list-right a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.signInBtn {
+  width: 115px;
+  height: 50px;
+  border: 3px solid hsla(208, 29%, 38%, 1);
+  border-radius: 45px;
+  transition: all 0.3s;
+  cursor: pointer;
+  /* background: rgba(128, 128, 128, 0.404); */
+  background: transparent;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+}
+
+.text:hover{
+  color: rgb(5, 163, 255);
+}
+
+.signInBtn:hover {
+  background: rgb(5, 163, 255);
+  color: white;
+  font-size: 1.2em;
+}
+.signInBtn a {
+  color: white;
+}
+
+@keyframes animate_border {
+  to {
+    transform: translateX(-50%);
+  }
+} 
+.articleContainer {
+  background-image: url(/Asset/futuristic-smart-city-with-5g-global-network-technology_53876-98438.avif);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin-top: -1rem;
+}
+
+.writeupContainer {
+  gap: 20px;
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.hireTalent {
+  background-color: white;
+  max-width: 800px;
+  padding: 20px;
+  border-radius: 10px;
+  padding-bottom: 60px;
+  text-align: center;
+  animation-name: rotateSwipeAnimation;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  margin-top: 10rem;
+  /* position: fixed; */
+  display: none;
+}
+
+.hireTalent h1 {
+  font-size: 25px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+.hireTalent h2 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.hireTalent p {
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 2px;
+  margin-top: 20px;
+}
+.firstDisplay {
+  background-color: grey;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  font-size: 30px;
+}
+.aboutSection {
+  /* background-color: hsla(206, 4%, 67%, 0.466); */
+  background-color: #64A1B2ff;
+}
+
+#client {
+  text-align: center;
+  text-transform: uppercase;
+  color: hsl(206, 4%, 67%);
+  font-size: 18px;
+  padding-top: 20px;
+}
+
+.businessinfo {
+  display: flex;
+  margin-top: 0px;
+  border-top: 0;
+  margin-bottom: 0;
+}
+
+.ownerinfo img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-top: 0;
+  margin-left: 60px;
+}
+
+.ownerinfo {
+  flex: 1;
+  padding: 30px;
+  font-size: 18px;
+  font-weight: 600;
+  margin-left: 40px;
+}
+
+.ownerinfo > p {
+  color: hsl(232, 10%, 55%);
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 2px;
+  margin-top: 20px;
+  max-width: 300px;
+}
+
+footer {
+  background-color: hsl(233, 26%, 24%);
+  /* background-color: #315cfd; */
+  color: white;
+  display: flex;
+  padding-top: 30px;
+  box-sizing: border-box;
+  max-width: 1400px;
+  margin: auto;
+  padding-bottom: 3em;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 120px;
+  margin-left: 10em;
+}
+
+.footer-links ul > li {
+  list-style-type: none;
+  line-height: 40px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: white;
+  /*border: 1px solid red;*/
+}
+
+.copyright {
+  margin-left: 18em;
+}
+
+.copyright a {
+  text-decoration: none;
+  color: antiquewhite;
+  opacity: 0.3;
+}
+
+.copyright p {
+  margin-top: 2em;
+}
+
+.copyright button {
+  margin-left: 90px;
+}
+
+.footer-img div {
+  box-sizing: border-box;
+  padding-top: 3em;
+}
+
+.whatever img {
+  padding: 0 5px;
+}
+
+.footer-img {
+  padding-top: 10px;
+  margin-top: 0;
+}
+
+.links-container {
+  display: flex;
+  margin: auto;
+  gap: 120px;
+  justify-content: space-around;
+}
+
+@keyframes rotateSwipeAnimation {
+  0% {
+    transform: translateX(-100%);
+    opacity: 1;
+    animation-timing-function: ease-in;
+  }
+  25% {
+    transform: translateX(20%);
+    opacity: 1;
+    animation-timing-function: ease-in-out;
+  }
+  50% {
+    transform: translateX(40%);
+    opacity: 1;
+    animation-duration-delay: 40s;
+    animation-timing-function: ease-in-out;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .list-right {
+    font-size: 20px;
+  }
+  .list-right a {
+    width: 80px;
+  }
+  nav ul {
+    gap: 5rem;
+    /* margin-left: 8rem; */
+  }
+  /* .logo p {
+    margin-left: 1.5rem;
+  } */
+}
+@media screen and (max-width: 800px) {
+  .headerSection {
+    display: none;
+  }
+
+  .logoMobile {
+    opacity: 1;
+  }
+  #nav {
+    opacity: 1;
+  }
+  .articleContainer {
+    padding: 30px;
+  }
+  .bars {
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    top: 20px;
+    right: 30px;
+    cursor: pointer;
+    z-index: 101;
+    padding-top: 9px;
+  }
+
+  .bar {
+    width: 100%;
+    height: 4px;
+    background-color: black;
+    position: absolute;
+  }
+
+  span::before,
+  span::after {
+    content: "";
+    display: block;
+    background-color: black;
+    width: 100%;
+    height: 4px;
+    position: absolute;
+  }
+
+  .bar::before {
+    transform: translateY(-9px);
+  }
+
+  .bar::after {
+    transform: translateY(9px);
+  }
+
+  .bars.active .bar {
+    background-color: transparent;
+  }
+
+  .bars.active span::before {
+    animation: top-bar 1s;
+    animation-fill-mode: forwards;
+  }
+
+  .bars.active span::after {
+    animation: bottom-bar 1s;
+    animation-fill-mode: forwards;
+  }
+
+  #nav {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: all 1s;
+    z-index: -1;
+    overflow: hidden;
+    opacity: 0;
+  }
+
+  #nav a {
+    color: #fff;
+    text-decoration: none;
+    line-height: 70vw;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-indent: 50vw;
+    border-radius: 50%;
+    transition: all 0.5s;
+  }
+
+  #nav a:hover {
+    background: #357ffd;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  .visible {
+    z-index: 100 !important;
+    opacity: 1 !important;
+  }
+
+  .shape-circle {
+    border-radius: 50%;
+    width: 20vw;
+    height: 20vw;
+    top: -10vw;
+    right: -10vw;
+    position: absolute;
+    transition: all 1s ease-in-out;
+    background: #2979ff;
+    box-shadow: 0 0px 0px rgba(4, 26, 62, 0.5);
+  }
+
+  nav.visible li:first-child {
+    width: 240vw;
+    height: 240vw;
+    top: -150vw;
+    right: -150vw;
+    z-index: 5;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0 0px 80px rgba(4, 26, 62, 0.5);
+  }
+
+  nav.visible li:nth-child(2) {
+    width: 200vw;
+    height: 200vw;
+    top: -125vw;
+    right: -125vw;
+    z-index: 6;
+    transition: all 0.6s ease-in-out;
+    box-shadow: 0 0px 80px rgba(4, 26, 62, 0.5);
+  }
+
+  nav.visible li:nth-child(3) {
+    width: 160vw;
+    height: 160vw;
+    top: -100vw;
+    right: -100vw;
+    z-index: 7;
+    transition: all 0.7s ease-in-out;
+    box-shadow: 0 0px 80px rgba(4, 26, 62, 0.5);
+  }
+  nav.visible li:nth-child(4) {
+    width: 120vw;
+    height: 120vw;
+    top: -75vw;
+    right: -75vw;
+    z-index: 8;
+    transition: all 0.8s ease-in-out;
+    box-shadow: 0 0px 80px rgba(4, 26, 62, 0.5);
+  }
+
+  nav.visible li:nth-child(5) {
+    width: 80vw;
+    height: 80vw;
+    top: -50vw;
+    right: -50vw;
+    z-index: 9;
+    transition: all 0.9s ease-in-out;
+    box-shadow: 0 0px 80px rgba(4, 26, 62, 0.5);
+  }
+
+  nav.visible li:last-child {
+    width: 40vw;
+    height: 40vw;
+    top: -25vw;
+    right: -25vw;
+    z-index: 10;
+    transition: all 0.1s ease-in-out;
+    box-shadow: 0 0px 80px rgba(4, 26, 62, 0.5);
+  }
+
+  nav.visible li:first-child a {
+    line-height: 395vw !important;
+    text-indent: 32vw !important;
+  }
+
+  nav.visible li:nth-child(2) a {
+    line-height: 330vw !important;
+    text-indent: 25vw !important;
+  }
+
+  nav.visible li:nth-child(3) a {
+    line-height: 265vw !important;
+    text-indent: 17vw !important;
+  }
+  nav.visible li:nth-child(4) a {
+    line-height: 200vw !important;
+    text-indent: 12vw !important;
+  }
+  nav.visible li:nth-child(5) a {
+    line-height: 135vw !important;
+    text-indent: 6vw !important;
+  }
+
+  nav.visible li:last-child a {
+    line-height: 70vw !important;
+    text-indent: -2vw !important;
+  }
+
+  @keyframes top-bar {
+    50% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: rotate(45deg) translateY(0);
+    }
+  }
+
+  @keyframes bottom-bar {
+    50% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: rotate(-45deg) translateY(0);
+    }
+  }
+  .businessinfo {
+    display: flex;
+    flex-direction: column;
+  }
+
+  span::before,
+  span::after {
+    content: "";
+    display: none;
+  }
+
+  footer {
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    margin: 0;
+    padding: 40px 0;
+  }
+
+  .footer-icon {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-icon,
+  .copyright {
+    margin: 0;
+    padding: 0;
+  }
+
+  .copyright button {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+
+  .hireTalent {
+    background-color: white;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    padding-bottom: 60px;
+    text-align: center;
+    margin-top: 10rem;
+    position: fixed;
+  }
+}

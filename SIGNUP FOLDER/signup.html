@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../LOGIN FOLDER/login.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" id="validateSignUp">
+        <section class="formContainer">
+          <div class="signUpPage">
+            <h2>Sign Up</h2>
+            <div class="inputSection">
+              <div class="boxInput">
+                <input
+                  type="text"
+                  placeholder="Username"
+                  class="box"
+                  id="usernameBox"
+                />
+              </div>
+              <div class="boxInput">
+                <input
+                  type="text"
+                  placeholder="FullName"
+                  class="box"
+                  id="fullNameBox"
+                />
+              </div>
+              <div class="boxInput">
+                <input
+                  type="text"
+                  placeholder="Gender"
+                  class="box"
+                  id="genderBox"
+                />
+              </div>
+              <div class="boxInput">
+                <input
+                  type="text"
+                  placeholder="i.e 1990-01-01"
+                  class="box"
+                  id="DobBox"
+                />
+              </div>
+              <div class="boxInput">
+                <input
+                  type="text"
+                  placeholder="city"
+                  class="box"
+                  id="cityBox"
+                />
+              </div>
+              
+              <div class="boxInput">
+                <input
+                  type="text"
+                  placeholder="Country"
+                  class="box"
+                  id="CountryBox"
+                />
+              </div> 
+              <div class="boxInput">
+                <input
+                  type="number"
+                  placeholder="NIN"
+                  class="box"
+                  id="NinBox"
+                />
+              </div> 
+
+
+              <div class="boxInput">
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  class="box"
+                  id="emailSignUpBox"
+                  required
+                />
+                <img
+                  src="/Asset/icons8-email-48.png"
+                  alt=""
+                  class="iconEmail symbol"
+                />
+              </div>
+  
+              <div class="intialPassword boxInput">
+                <input
+                  type="password"
+                  placeholder="Create password"
+                  class="box"
+                  required
+                  id="passwordSignUpBox"
+                  maxlength="13"
+                />
+                <img
+                  src="/Asset/icons8-password-24.png"
+                  alt=""
+                  class="iconPassword symbol"
+                />
+                <img
+                  src="/Asset/eye-password-hide-svgrepo-com.svg"
+                  alt=""
+                  class="eyeSlack eyeSlackSignUp symbol"
+                />
+              </div>
+  
+              <div class="confirmPassword boxInput">
+                <input
+                  type="password"
+                  placeholder="Confirm password"
+                  class="box"
+                  id="confirmPasswordBox"
+                  required
+                  maxlength="13"
+                />
+                <img
+                  src="/Asset/icons8-password-24.png"
+                  alt=""
+                  class="iconPassword symbol"
+                />
+                <img
+                  src="/Asset/eye-password-hide-svgrepo-com.svg"
+                  alt=""
+                  class="eyeSlack eyeSlackSignUp symbol"
+                />
+              </div> 
+              <p>The password length must be minimum of 8 characters</p>
+            </div>
+  
+            <button class="classBtn signUpBtn" id="signUpBtn">signup Now</button>
+            <p class="finalPart">
+              Already have an account?
+              <span><a href="../LOGIN FOLDER/login.html" class="loginLink">Login</a></span>
+            </p>
+          </div>
+        </section>
+      </form>
+
+      <script src="signup.js"></script>
+</body>
+</html>

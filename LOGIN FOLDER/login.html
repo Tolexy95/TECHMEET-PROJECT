@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <form action="" id="validationForm">
+      <section class="formContainer">
+        <div class="signInPage">
+          <h2>Login</h2>
+          <div class="inputSection">
+            <div class="boxInput">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                class="box"
+                required
+                id="emailBox"
+              />
+              <img
+                src="/Asset/icons8-email-48.png"
+                alt=""
+                class="iconEmail symbol"
+              />
+            </div>
+
+            <div class="boxInput">
+              <input
+                type="password"
+                placeholder="Enter your Password"
+                maxlength="13"
+                class="box"
+                required
+                id="passwordBox"
+              />
+              <img
+                src="/Asset/icons8-password-24.png"
+                alt=""
+                class="iconPassword symbol"
+              />
+              <img
+                src="/Asset/eye-password-hide-svgrepo-com.svg"
+                alt=""
+                class="eyeSlack symbol"
+              />
+             
+            </div>
+            <p>The password length must be minimum of 8 characters</p>
+          </div>
+
+          <div class="checkBoxPage">
+            <div class="boxCheck"><input type="checkbox" /></div>
+            <label for="passWord"
+              >Remember me<span><a href="">Forget password?</a></span></label
+            >
+          </div>
+
+          <div>
+            <input
+              type="submit"
+              name=""
+              id="submit"
+              class="classBtn classBtnLogin"
+            />
+
+            <p class="finalPart signInPara">
+              Don't have an account?
+              <span><a href="../SIGNUP FOLDER/signup.html" class="signUpLink">Sign up</a></span>
+            </p>
+          </div>
+        </div>
+      </section>
+    </form>
+    <div class="loader"></div>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="login.js" type="module"></script>
+  </body>
+</html>
