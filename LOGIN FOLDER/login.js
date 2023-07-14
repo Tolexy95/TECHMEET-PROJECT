@@ -17,8 +17,8 @@ eyeIcons.forEach(function (eyeIcon) {
     }
   });
 });
-
-
+const loaderElement = document.querySelector(".loader");
+const messageContainer=document.querySelector(".messageContainer")
 // Function to store the token and user's name in local storage
 export function storeTokenAndUserName(token, userName) {
   localStorage.setItem('token', token);
@@ -46,13 +46,16 @@ export async function handleSignIn(event) {
   const email = emailInput.value;
   const password = passwordInput.value;
   
+  loaderElement.style.opacity ="1";
   try {
     const { token, userName } = await authenticateUser(email, password);
-  
+    
     if (token && userName) {
       storeTokenAndUserName(token, userName);
-      // Navigate to the next page
-      alert("Congratulations! You are logged in as " + userName);
+      
+     
+      messageContainer.textContent=`You are logged in as ${userName}`
+
       window.location.href = '/MAINTWO FOLDER/Sidebar Menu - Dark Light Mode/index.html';
     } else {
       alert('Invalid email or password');

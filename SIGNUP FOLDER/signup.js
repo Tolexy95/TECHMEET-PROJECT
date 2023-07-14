@@ -43,8 +43,10 @@ async function handleSignUp(event) {
   const nin = ninInput.value;
   const email = emailInput.value;
   const password = passwordInput.value;
+  const loaderElement = document.querySelector(".loader");
   // const confirmPassword = confirmPasswordInput.value;
-
+  
+  loaderElement.style.opacity ="1";
   try {
     const isSuccess = await signUpUser(
       userName,
@@ -60,7 +62,6 @@ async function handleSignUp(event) {
     );
 
     if (isSuccess) {
-      alert("Sign up successful");
       window.location.href = "../LOGIN FOLDER/login.html"; // Redirect to the login page
     } else {
       console.log("Failed to sign up user");

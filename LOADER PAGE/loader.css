@@ -15,11 +15,12 @@
 .loader {
     display: flex;
     align-items: center;
-    top: 50%;
-    left: 50%;
+    top: 58%;
+    left: 58%;
     width: 100px;
     height: 100px;
     position: absolute;
+    opacity: 0;
   }
   
   .loader::after {
@@ -30,6 +31,16 @@
     border-top-color: rgba(17, 24, 39, 1);
     border-radius: 50%;
     animation: loading 0.75s ease-out infinite;
+  }
+  .signupLoader{
+    display: flex;
+    /* align-items: center; */
+    top: 122%;
+    left: 60%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    opacity: 0;
   }
   
   @keyframes loading {
