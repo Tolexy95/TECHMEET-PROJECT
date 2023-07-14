@@ -129,3 +129,88 @@ signInForm.addEventListener('submit', handleSignIn);
 // //   loader.style.display ="block";
 // //   signInForm.style.display ="none";
 // // })
+
+
+
+
+
+
+
+
+
+async function getUsers() {
+  try {
+    const response = await fetch("https://techmeetappapi.azurewebsites.net/api/Users");
+   
+    const data = await response.json();
+    const userSection = document.getElementById("userSection");
+
+    const currentUser = localStorage.getItem("userName"); // Retrieve the userName from local storage
+
+    data.forEach((user) => {
+      if (user.name === currentUser) { // Check if the user name matches the current user
+        const userContainer = document.createElement("div");
+        userContainer.classList.add("memberContainer");
+
+        const userImage = document.createElement("img");
+        userImage.src = user.image;
+        userImage.alt = "User Image";
+        userImage.classList.add("otherUserImage");
+        userContainer.appendChild(userImage);
+
+        const userName = document.createElement("p");
+        userName.textContent = user.name;
+        userName.classList.add("otherUserName");
+        userContainer.appendChild(userName);
+
+        const userEmail = document.createElement("p");
+        userEmail.textContent = user.email;
+        userEmail.classList.add("otherUserEmail");
+        userContainer.appendChild(userEmail);
+
+        const userProfileLink = document.createElement("a");
+        userProfileLink.href = `/MAIN FOLDER/main.html?username=${encodeURIComponent(user.name)}`;
+        userProfileLink.textContent = "Go to user profile";
+        userProfileLink.classList.add("otherUserProfile");
+        userContainer.appendChild(userProfileLink);
+
+        const chatLink = document.createElement("a");
+        chatLink.href = `/MESSAGE/message.html?username=${encodeURIComponent(currentUser)}&recipient=${encodeURIComponent(user.name)}`; // Pass both the current user and the recipient's name as query parameters
+        chatLink.textContent = "Chat with user";
+        chatLink.classList.add("chatWithUser");
+        userContainer.appendChild(chatLink);
+
+        const messageInput = document.createElement("input");
+        messageInput.type = "text";
+        messageInput.placeholder = "Type your message";
+        messageInput.classList.add("messageInput");
+        userContainer.appendChild(messageInput);
+
+        const sendMessageButton = document.createElement("button");
+        sendMessageButton.textContent = "Send";
+        sendMessageButton.classList.add("sendMessageButton");
+        sendMessageButton.addEventListener("click", () => {
+          const message = messageInput.value;
+          if (message.trim() !== "") {
+            // Perform the logic to send the message to the recipient
+            console.log(`Sending message: "${message}" to recipient: ${user.name}`);
+            messageInput.value = "";
+          }
+        });
+        userContainer.appendChild(sendMessageButton);
+
+        userSection.appendChild(userContainer);
+      }
+    });
+  } catch (error) {
+    console.error("Error:", error);
+  }
+}
+
+getUsers();
+
+
+
+
+
+
