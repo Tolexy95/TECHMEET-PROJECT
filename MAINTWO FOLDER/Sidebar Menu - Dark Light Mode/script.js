@@ -47,7 +47,6 @@ function getUserCredentials() {
   // Call the loadUserCredentials function when the page loads
   window.addEventListener("load", loadUserCredentials);
   
-  // Function to handle user search
   async function handleUserSearch(event) {
     if (event.key === "Enter") {
       const searchInput = document.querySelector('.search-box input');
@@ -55,17 +54,36 @@ function getUserCredentials() {
   
       if (username !== '') {
         try {
-          const userProfileEndpoint = `https://techmeetappwebapi.onrender.com/api/Users/${username}`;
-  
-          // Make API call to check if the user profile exists
-          const response = await fetch(userProfileEndpoint);
+          // Retrieve the actual username from the user login API
+          const token = localStorage.getItem('token');
+          const response = await fetch('https://techmeetappwebapi.onrender.com/api/Account/user', {
+            method: 'GET',
+            headers: { 'Authorization': `Bearer ${token}` }
+          });
   
           if (response.ok) {
-            // User profile exists, redirect to the profile page
-            window.location.href = `/PROFILE FOLDER/profile.html?username=${username}`;
+            const user = await response.json();
+            const actualUsername = user.userName;
+  
+            const userProfileEndpoint = `https://techmeetappwebapi.onrender.com/api/Users/${actualUsername}`;
+  
+            // Make API call to upload the user profile
+            const uploadProfileResponse = await fetch(userProfileEndpoint, {
+              method: 'POST',
+              headers: { 'Authorization': `Bearer ${token}` },
+              body: JSON.stringify({ username })
+            });
+  
+            if (uploadProfileResponse.ok) {
+              // User profile uploaded successfully, redirect to the profile page
+              window.location.href = `/PROFILE FOLDER/profile.html?username=${actualUsername}`;
+            } else {
+              // Failed to upload user profile, display an error message or handle accordingly
+              alert('Failed to upload user profile');
+            }
           } else {
-            // User profile does not exist, display an error message or handle accordingly
-            alert('User profile not found');
+            // Handle unauthorized access or other errors
+            alert('Unauthorized access or error occurred');
           }
         } catch (error) {
           console.error('Error:', error);
@@ -78,12 +96,3 @@ function getUserCredentials() {
   const searchInput = document.querySelector('.search-box input');
   searchInput.addEventListener('keyup', handleUserSearch);
   
-
-  // Alternatively, you can listen to form submission event
-  // const searchForm = document.querySelector('.search-box');
-  // searchForm.addEventListener('submit', (event) => {
-  //   event.preventDefault();
-  //   handleUserSearch();
-  // });
-  
- 

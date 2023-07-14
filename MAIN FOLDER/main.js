@@ -30,24 +30,24 @@ function previewProfilePicture(event) {
   }
 }
 
-// Get the "Other User Profile" link element
-const otherUserProfileLink = document.querySelectorAll('.otherUserProfile');
+// // Get the "Other User Profile" link element
+// const otherUserProfileLink = document.querySelectorAll('.otherUserProfile');
 
-otherUserProfileLink.forEach((userProfile => {
-  userProfile.addEventListener("click", (e) => {
-    e.preventDefault();
-    // Show the profile container
-    profileContainer.style.display = 'block';
-    // profileContainer.style.zIndex = '10';
+// otherUserProfileLink.forEach((userProfile => {
+//   userProfile.addEventListener("click", (e) => {
+//     e.preventDefault();
+//     // Show the profile container
+//     profileContainer.style.display = 'block';
+//     // profileContainer.style.zIndex = '10';
 
-    profileContainer.addEventListener('mouseleave', () => {
-      // Hide the profile container
-      profileContainer.style.display = 'none';
-    });
+//     profileContainer.addEventListener('mouseleave', () => {
+//       // Hide the profile container
+//       profileContainer.style.display = 'none';
+//     });
     
-  }); 
+//   }); 
 
-}));
+// }));
 
 
 // Function to save the profile information
