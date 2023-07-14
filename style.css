@@ -21,7 +21,7 @@ html {
   margin-bottom: 0;
 }
 .footerlogo{
-  width: 150px;
+  width: 120px;
   /* background-color: #061A2Eff; */
   /* font-size: 32px; */
 }
@@ -178,11 +178,12 @@ footer {
   -webkit-box-shadow: #333 1px 3px 4px;
   -moz-box-shadow: #333 1px 3px 4px;
   box-shadow: #333 1px 3px 4px;
-  color: white;
+  color: rgba(255, 255, 255, 0.671);
   padding-top: 30px;
   z-index: 20;
   padding-bottom: 6rem;
   position: relative;
+ 
 }
 
 .footer-icons {
@@ -215,7 +216,7 @@ footer {
 
 .footer-links a {
   text-decoration: none;
-  color: white;
+  color: rgba(255, 255, 255, 0.884);
   font-size: 16px;
 }
 
@@ -242,7 +243,7 @@ footer {
   50% {
     transform: translateX(40%);
     opacity: 1;
-    animation-duration-delay: 40s;
+    animation-duration-delay: 30s;
     animation-timing-function: ease-in-out;
   }
   100% {

@@ -30,29 +30,6 @@ function previewProfilePicture(event) {
   }
 }
 
-// const profileIcon = document.querySelector(".profileIcon");
-// const profileContainer = document.querySelector(".container");
-
-// // Variable to track the toggle state
-// let isProfileContainerVisible = false;
-
-// // Function to toggle the profile container
-// function toggleProfileContainer() {
-//   if (isProfileContainerVisible) {
-//     profileContainer.style.display = "none";
-//   } else {
-//     profileContainer.style.display = "block";
-//     // Center the profile container vertically
-//     // profileContainer.style.transform = "translateX(0%)";
-//   }
-
-//   // Toggle the state
-//   isProfileContainerVisible = !isProfileContainerVisible;
-// }
-// // Add click event listener to the profile icon
-// profileIcon.addEventListener("click", toggleProfileContainer);
-
-
 // Get the "Other User Profile" link element
 const otherUserProfileLink = document.querySelectorAll('.otherUserProfile');
 
@@ -148,19 +125,58 @@ updateBtn.addEventListener("click", saveProfile);
 window.addEventListener("load", loadProfile);
 
 
-// Function to toggle between light and dark mode
-function toggleDarkMode() {
-  const body = document.body;
-  const profileContainer = document.querySelector(".container");
-  body.classList.toggle('dark-mode');
-  profileContainer.classList.toggle("dark-mode");
-}
+// // Function to toggle between light and dark mode
+// function toggleDarkMode() {
+//   const body = document.body;
+//   const profileContainer = document.querySelector(".container");
+//   body.classList.toggle('dark-mode');
+//   profileContainer.classList.toggle("dark-mode");
+// }
 
-// Add event listener to toggle switch
-const toggleSwitch = document.getElementById('toggleSwitch');
-toggleSwitch.addEventListener('change', toggleDarkMode);
+// // Add event listener to toggle switch
+// const toggleSwitch = document.getElementById('toggleSwitch');
+// toggleSwitch.addEventListener('change', toggleDarkMode);
 
 
 
+document.addEventListener('DOMContentLoaded', () => {
+  const updateBtn = document.querySelector('.update-btn');
+
+  updateBtn.addEventListener('click', () => {
+    const firstName = document.getElementById('first-name').value;
+    const lastName = document.getElementById('last-name').value;
+    const phone = document.getElementById('phone').value;
+    const gender = document.getElementById('gender').value;
+    const email = document.getElementById('email').value;
+    const address = document.getElementById('address').value;
+    const stack = document.getElementById('stack').value;
+    const yearsOfExperience = document.getElementById('yearsOfExperience').value;
+    const facebook = document.getElementById('facebook').value;
+    const linkedin = document.getElementById('linkedin').value;
+    const twitter = document.getElementById('twitter').value;
+    const instagram = document.getElementById('instagram').value;
+    const bio = document.getElementById('bio').value;
+
+    if (
+      firstName === '' &&
+      lastName === '' &&
+      phone === '' &&
+      gender === '' &&
+      email === '' &&
+      address === '' &&
+      stack === '' &&
+      yearsOfExperience === '' &&
+      facebook === '' &&
+      linkedin === '' &&
+      twitter === '' &&
+      instagram === '' &&
+      bio === ''
+    ) {
+      alert('Please make some changes before updating the profile.');
+    } else {
+      alert('Profile has been successfully updated.');
+    }
+  });
+});
 
 

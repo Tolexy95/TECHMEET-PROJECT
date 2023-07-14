@@ -75,12 +75,39 @@ body.dark-mode {
 }
 
 .logo {
-  margin-right: 15rem;
+  /* margin-right: 15rem; */
   width: 180px;
-  /* position: relative; */
-  /* right: 45%; */
+}
+.goHome {
+  width: 115px;
+  height: 50px;
+  border: 2px solid hsla(208, 29%, 38%, 1);
+  border-radius: 45px;
+  transition: all 0.3s;
+  cursor: pointer;
+  /* background: rgba(128, 128, 128, 0.404); */
+  background: transparent;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
 }
 
+.goHome:hover {
+  background: rgb(5, 163, 255);
+  color: white;
+  font-size: 1.2em;
+  margin-top: 0;
+}
+.goHome a {
+  color: black;
+  text-decoration: none;
+}
+.flexClass{
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  padding-left: 4rem;
+}
 .container {
   /* background-color: #A7A2A9; */
   background-color: #fff;

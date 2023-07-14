@@ -20,24 +20,24 @@ eyeIcons.forEach(function (eyeIcon) {
 
 
 // Function to store the token and user's name in local storage
-function storeTokenAndUserName(token, userName) {
+export function storeTokenAndUserName(token, userName) {
   localStorage.setItem('token', token);
   localStorage.setItem('userName', userName);
 }
 
 
 // Function to retrieve the token from local storage
-function getToken() {
+export function getToken() {
   return localStorage.getItem('token');
 }
 
 // Function to retrieve the user's name from local storage
-function getUserName() {
+export function getUserName() {
   return localStorage.getItem('userName');
 }
 
 // Function to handle form submission for signing in
-async function handleSignIn(event) {
+export async function handleSignIn(event) {
   event.preventDefault();
   
   const emailInput = document.getElementById('emailBox');
@@ -63,7 +63,7 @@ async function handleSignIn(event) {
 }
 
 // Function to authenticate the user and retrieve the token and user's name
-async function authenticateUser(email, password) {
+export async function authenticateUser(email, password) {
   try {
     // Make API call to authenticate the user
     const response = await fetch('https://techmeetappwebapi.onrender.com/api/Account/login',{
@@ -103,11 +103,29 @@ async function authenticateUser(email, password) {
 const signInForm = document.getElementById('validationForm');
 signInForm.addEventListener('submit', handleSignIn);
 
+// const signInButton = document.getElementById("submit");
 
+// console.log(signInButton)
+// // Function to handle form submission for signing in
+// function loaderPage(event) {
+//   event.preventDefault();
 
+//   const emailInput = document.getElementById('emailBox');
+//   const passwordInput = document.getElementById('passwordBox');
 
+//   const email = emailInput.value;
+//   const password = passwordInput.value;
 
+//   if (email.trim() === '' || password.trim() === '') {
+//     // Display an error message or perform any desired action
+//     alert('Please enter both email and password.');
+//   } else {
+//     // Navigate to the loader page
+//     window.location.href = '../LOADER PAGE/loader.html';
+//   }
+// }
 
+// signInButton.addEventListener("click", loaderPage);
 
 
 

@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
+  body {
+    background-image: url(/Asset/images\ \(6\).jpeg);
+    background-size: cover;
+    font: 400 12px "Lato", sans-serif;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+.loader {
+    display: flex;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+  }
+  
+  .loader::after {
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 15px solid #dddddd;
+    border-top-color: rgba(17, 24, 39, 1);
+    border-radius: 50%;
+    animation: loading 0.75s ease-out infinite;
+  }
+  
+  @keyframes loading {
+    from {
+      transform: rotate(0turn);
+    }
+  
+    to {
+      transform: rotate(1turn);
+    }
+  }
+  @media (min-width: 768px) {
+    .button-64 {
+      font-size: 24px;
+      min-width: 196px;
+    }
+  }
